@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content & Form</title>
+     
+</head>
+<body>
+
+    <header>
+        <h1>HTML5 Content & Forms</h1>
+        <p>Showcasing lists, tables, media, and a complete HTML5 form with validation.</p>
+    </header>
+
+    <!-- Content Section -->
+    <section>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Web Design</li>
+            <li>Web Development</li>
+            <li>SEO Optimization</li>
+        </ul>
+
+        <h2>Pricing Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Basic</th>
+                    <th>Premium</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web Design</td>
+                    <td>$200</td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <td>Web Development</td>
+                    <td>$400</td>
+                    <td>$900</td>
+                </tr>
+                <tr>
+                    <td>SEO Optimization</td>
+                    <td>$150</td>
+                    <td>$300</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Promo Video</h2>
+        <video controls >
+            <source src="promo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+        <h2>Contact Us</h2>
+        <form action="#" method="post" autocomplete="on">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="DILHT" required minlength="3">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="youR@example.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+26588848198311" 
+                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Service Request</legend>
+                <label for="service">Choose a Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">--Select--</option>
+                    <option value="design">Web Design</option>
+                    <option value="development">Web Development</option>
+                    <option value="seo">SEO Optimization</option>
+                </select>
+
+                <label for="details">Project Details:</label>
+                <textarea id="details" name="details" rows="4" placeholder="Describe your project..." required></textarea>
+
+                <label>
+                    <input type="checkbox" name="newsletter" value="yes">
+                    Subscribe to our newsletter
+                </label>
+            </fieldset>
+
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 HTML5 Assignment Demo</p>
+    </footer>
+
+</body>
+</html>
